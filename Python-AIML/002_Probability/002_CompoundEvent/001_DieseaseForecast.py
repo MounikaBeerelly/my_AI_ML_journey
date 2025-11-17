@@ -52,7 +52,7 @@ class DieseaseProbabilityAnalyzer :
             "P(Diesease | HighBMI ∩ Smoker)" : round(pDieseaseGivenCompound, 4)
         }        
         
-def resultsViaualizer(inProbabilities) :
+def resultsVisualizer(inProbabilities) :
     """function to visualize the compound probability trends across years"""
     df = pd.DataFrame(inProbabilities).T.reset_index()
     df.columns= ["Year", "P(Diesease)", "P(HighBMI)", "P(Smoker)", "P(HighBMI ∩ Smoker)", "P(Diesease | HighBMI ∩ Smoker)"]
@@ -92,7 +92,7 @@ def main() :
         yearProbabilities = processSheet(sheetDataFrame)
         allYearProbabilities[outSheetName] = yearProbabilities
         
-    resultsViaualizer(allYearProbabilities)
+    resultsVisualizer(allYearProbabilities)
     
 if __name__ == "__main__":
     main()
