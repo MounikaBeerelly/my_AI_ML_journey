@@ -24,7 +24,7 @@ $$
 10. Moving Mean --> Time Series
 11. Expected Mean --> Probability
 
-### What is Arithmetic Mean (AM) ?
+## What is Arithmetic Mean (AM) ?
 - The Arithmetic Mean (AM) is the sum of all numerical observations divided by the number of observations.
 - It represents the central value around which the data is distributed.
 #### How many ways we can implement Arithmetic Mean?
@@ -38,7 +38,7 @@ $$
 - Linear Transformation Property
 - Combined Mean Formula 
 
-### What is Weighted Mean ?
+## What is Weighted Mean ?
 - The `Weighted Mean` is a measure of central tendency where `each observation contributes proportionally according to its assigned weight`.
 - Weighted Mean reflects `relative importance, frequency, or reliability` of each value.
 
@@ -48,6 +48,7 @@ $$
 - General Formula : **GM = $\sqrt[n]{x_1 \times x_2 \times \cdots \times x_n}$**
 
 - Logarithmetic Form (used in ML & Big data) :
+  
 $$
 \text{GM} = \exp\left(\frac{1}{n}\sum_{i=1}^{n} \ln(x_i)\right)
 $$
